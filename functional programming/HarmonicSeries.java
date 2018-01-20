@@ -1,4 +1,12 @@
-/* java program for print Harmonic series till nth value*/
+/* 
+	Harmonic Number 
+
+	Desc -> Prints the Nth harmonic number: 1/1 + 1/2 + ... + 1/N .
+		I/P   -> The Harmonic Value N. Ensure N != 0.
+		Logic -> compute 1/1 + 1/2 + 1/3 + ... + 1/N.
+		O/P   -> Print the Nth Harmonic Value.
+
+*/
 
 import java.util.Scanner;
 class HarmonicSeries
