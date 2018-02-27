@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+  <display-name>Servlet Chaining</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+   
+  </welcome-file-list>
+  <servlet>
+  <servlet-name>TestForwardController</servlet-name>
+  <servlet-class>com.bridgelabz.TestForwardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>TestForwardController</servlet-name>
+  <url-pattern>/TestForwardController</url-pattern>
+  </servlet-mapping>
+  
+   <!-- <servlet>
+  <servlet-name>TestIncludeController</servlet-name>
+  <servlet-class>com.bridgelabz.TestIncludeController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>TestIncludeController</servlet-name>
+  <url-pattern>/TestController</url-pattern>
+  </servlet-mapping> -->
+  
+  
+  
+  <servlet>
+  <servlet-name>TestController</servlet-name>
+  <servlet-class>com.bridgelabz.TestController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>TestController</servlet-name>
+  <url-pattern>/TestController</url-pattern>
+  </servlet-mapping>
+</web-app>
