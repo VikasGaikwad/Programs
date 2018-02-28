@@ -3,6 +3,7 @@ package com.bridgelabz;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 import javax.servlet.ServletException;
@@ -10,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import com.mysql.jdbc.PreparedStatement;
 
 @SuppressWarnings("serial")
 public class Registration extends HttpServlet {
@@ -23,7 +23,7 @@ public class Registration extends HttpServlet {
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
 			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/common_data", "root", "root");
-			preparedStatement = (PreparedStatement) connection.prepareStatement(query);
+			preparedStatement = connection.prepareStatement(query);
 		} catch (Exception e) {
 			System.out.println("query execution failed...");
 			e.printStackTrace();

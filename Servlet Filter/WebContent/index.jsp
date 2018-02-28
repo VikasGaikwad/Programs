@@ -6,12 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
-<form action="" method="">
-<input type="text" name="username" placeholder="username">
-<input type="password" name="password" placeholder="password">
-<input type="submit" value="login"><br><br>
-<a href="registration.jsp">register</a>
+<body bgcolor="">
+
+<form action="filterExample" method="post" >
+<input type="text" name="name" placeholder="Enter Name">
+<input type="password" name="password" placeholder="Enter password">
+<input type="submit" value="login">
+
 </form>
+
 </body>
 </html>
