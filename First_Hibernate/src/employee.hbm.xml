@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+	<class name="com.bridgelabz.Employee" table="emp_data">
+		<id name="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="name" column="name" type="String"></property>
+		<property name="city" column="city" type="String"></property>
+		<property name="pin_code" column="pin_code" type="int"></property>
+		<property name="age" column="age" type="int"></property>
+		<property name="country" column="country" type="String"></property>
+	</class>
+
+</hibernate-mapping>
