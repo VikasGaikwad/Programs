@@ -22,6 +22,7 @@ public class App
       int k=object.getMe();
       System.out.println("**************************");
       System.out.println("cube of k is : "+Math.pow(k, 3));
+      
     }
 
 	
